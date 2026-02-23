@@ -15,7 +15,7 @@ namespace quickrecipe.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(); // This looks for Views/Home/Index.cshtml
         }
 
         public IActionResult Privacy()

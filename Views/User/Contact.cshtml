@@ -1,0 +1,124 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<style>
+    /* Header Section */
+    .contact-hero {
+        background: linear-gradient(45deg, #d32f2f 30%, #ffc107 100%);
+        color: white;
+        padding: 80px 0;
+        border-bottom: 8px solid #ffc107;
+    }
+
+    /* Contact Cards */
+    .contact-card {
+        border: none;
+        border-top: 5px solid #d32f2f;
+        transition: all 0.3s ease;
+        background: #fff;
+    }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+            border-top-color: #ffc107;
+        }
+
+    .icon-box {
+        width: 60px;
+        height: 60px;
+        background: #fff3cd;
+        color: #d32f2f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+    }
+
+    /* Social Links */
+    .social-btn {
+        width: 45px;
+        height: 45px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #f8f9fa;
+        color: #d32f2f;
+        margin: 0 5px;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+        .social-btn:hover {
+            background: #d32f2f;
+            color: #fff;
+        }
+</style>
+
+<div class="contact-hero text-center shadow">
+    <div class="container">
+        <h1 class="display-3 fw-bold">Let's <span class="text-dark">Connect</span></h1>
+        <p class="lead fs-4">Have questions about QuickCook? We're here to help!</p>
+    </div>
+</div>
+
+<div class="container my-5 py-4">
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+            <div class="card contact-card h-100 p-4 shadow-sm text-center">
+                <div class="icon-box mx-auto"><i class="bi bi-geo-alt-fill"></i></div>
+                <h4 class="fw-bold">Our Location</h4>
+                <p class="text-muted">123 Culinary Drive, Foodie City,<br>Gujarat, India</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card contact-card h-100 p-4 shadow-sm text-center">
+                <div class="icon-box mx-auto"><i class="bi bi-envelope-heart-fill"></i></div>
+                <h4 class="fw-bold">Email Us</h4>
+                <p class="text-muted">General: info@quickcook.com<br>Support: support@quickcook.com</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card contact-card h-100 p-4 shadow-sm text-center">
+                <div class="icon-box mx-auto"><i class="bi bi-telephone-inbound-fill"></i></div>
+                <h4 class="fw-bold">Call Us</h4>
+                <p class="text-muted">Mon-Fri: 9am - 6pm<br>+91 98765 43210</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 pt-5 align-items-center">
+        <div class="col-lg-6">
+            <h2 class="fw-bold text-danger">Why Reach Out to <span class="text-warning">Us?</span></h2>
+            <p class="text-muted fs-5 mt-3">
+                We are constantly looking for ways to improve the <strong>QuickCook</strong> experience. Whether you're a developer wanting to collaborate or a user with a new recipe idea, we value your input.
+            </p>
+            <ul class="list-unstyled mt-4">
+                <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Fast response within 24 hours</li>
+                <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Technical support for recipe uploads</li>
+                <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Feedback and suggestions portal</li>
+            </ul>
+        </div>
+        <div class="col-lg-6">
+            <div class="bg-light p-5 rounded-4 border-start border-5 border-warning shadow-sm">
+                <h3 class="fw-bold mb-4">Follow Our Journey</h3>
+                <p class="text-muted mb-4">Stay updated with the latest recipes and features by following us on social media.</p>
+                <div class="d-flex">
+                    <a href="#" class="social-btn shadow-sm"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-btn shadow-sm"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-btn shadow-sm"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="social-btn shadow-sm"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
