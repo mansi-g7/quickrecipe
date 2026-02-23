@@ -1,7 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using QuickCook.DATABASEFOLDER;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+//registering connection string using schooldb class
+builder.Services.AddDbContext<QCDB>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("con")));
+
+
 
 var app = builder.Build();
 
